@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caledon 3D Printshop - Custom Printing & Trending Designs</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration (Only defining font and animation here) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    // Custom keyframe animation for a subtle fade-in effect on scroll
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    },
+                    animation: {
+                        // Duration of the fade-in effect
+                        fadeIn: 'fadeIn 0.7s ease-out forwards',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome for Icons (Instagram icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* The custom .text-glow definition has been removed */
+        
+        /* Apply the fade-in animation to main sections (hidden by default) */
+        .animate-fadeIn {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased text-gray-800">
+
+    <!-- Header & Hero Section -->
+    <header class="bg-slate-900 shadow-xl py-12 md:py-20 text-white rounded-b-xl">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <!-- Removed the text-glow class -->
+            <h1 class="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-2 text-cyan-500">
+                CALEDON 3D PRINTSHOP
+            </h1>
+            <p class="text-xl md:text-2xl text-cyan-50 opacity-80 mt-4 max-w-2xl mx-auto">
+                Bringing digital designs to life. Custom printing services tailored to your needs, delivered with precision.
+            </p>
+        </div>
+    </header>
+
+    <main class="py-12 md:py-16">
+
+        <!-- Section 1: Top Trending Designs (Updated with Collections) -->
+        <!-- Added animate-fadeIn and data-delay for staggered effect -->
+        <section class="max-w-7xl mx-auto px-6 mb-16 animate-fadeIn" style="animation-delay: 0.1s;">
+            <h2 class="text-4xl font-bold text-center mb-10 text-slate-900">
+                Explore Popular Print Collections
+            </h2>
+            <p class="text-center text-gray-600 mb-12 max-w-3xl mx-auto">
+                Explore these curated collections from MakerWorld and let us know which designs you'd like printed!
+            </p>
+
+            <!-- Trending Items Grid (UPDATED CONTENT) -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Item 1: Christmas -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[1.03] border-t-4 border-cyan-500">
+                    <div class="text-4xl text-cyan-500 mb-4">🎄</div>
+                    <h3 class="text-xl font-semibold mb-2">Christmas Prints</h3>
+                    <p class="text-gray-600 text-sm">Explore ornaments, gifts, and seasonal decorations for the holidays.</p>
+                    <a href="https://makerworld.com/en/collections/3070236-christmas-2024" target="_blank" class="text-sm font-medium text-cyan-600 hover:text-cyan-700 mt-3 inline-block">View Christmas Collection</a>
+                </div>
+
+                <!-- Item 2: Fidget Toys -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[1.03] border-t-4 border-cyan-500">
+                    <div class="text-4xl text-cyan-500 mb-4">🧩</div>
+                    <h3 class="text-xl font-semibold mb-2">Fidget Toys & Gadgets</h3>
+                    <p class="text-gray-600 text-sm">A collection of popular articulated toys and functional stress relievers.</p>
+                    <a href="https://makerworld.com/en/collections/1776677-fidget-toys" target="_blank" class="text-sm font-medium text-cyan-600 hover:text-cyan-700 mt-3 inline-block">View Fidget Toys Collection</a>
+                </div>
+
+                <!-- Item 3: Planters -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[1.03] border-t-4 border-cyan-500">
+                    <div class="text-4xl text-cyan-500 mb-4">🪴</div>
+                    <h3 class="text-xl font-semibold mb-2">Unique Planters</h3>
+                    <p class="text-gray-600 text-sm">Decorative and functional planters for indoor plants and succulents.</p>
+                    <a href="https://makerworld.com/en/collections/1776679-planters" target="_blank" class="text-sm font-medium text-cyan-600 hover:text-cyan-700 mt-3 inline-block">View Planters Collection</a>
+                </div>
+
+                <!-- Item 4: Desk Organizers -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:scale-[1.03] border-t-4 border-cyan-500">
+                    <div class="text-4xl text-cyan-500 mb-4">🗃️</div>
+                    <h3 class="text-xl font-semibold mb-2">Desk Organizers</h3>
+                    <p class="text-gray-600 text-sm">Solutions for cable management, pen holders, and modular office storage.</p>
+                    <a href="https://makerworld.com/en/collections/1776684-desk-organizers" target="_blank" class="text-sm font-medium text-cyan-600 hover:text-cyan-700 mt-3 inline-block">View Organizers Collection</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Instagram CTA -->
+        <!-- Added animate-fadeIn and data-delay for staggered effect -->
+        <section class="max-w-7xl mx-auto px-6 mb-16 animate-fadeIn" style="animation-delay: 0.3s;">
+            <div class="bg-slate-900 p-8 md:p-12 rounded-xl shadow-2xl text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-cyan-50 mb-4">
+                    See Our Latest Prints in Action!
+                </h2>
+                <p class="text-lg text-gray-300 mb-6">
+                    Follow us on Instagram to view portfolio prints, time-lapses, and customer projects.
+                </p>
+                <a href="https://www.instagram.com/caledon3dprintshop" target="_blank" class="block w-full sm:inline-flex sm:w-auto items-center justify-center px-4 py-2 text-sm sm:px-8 sm:py-3 sm:text-lg font-semibold rounded-full text-white bg-cyan-500 hover:bg-cyan-600 transition duration-300 shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fab fa-instagram mr-3 text-xl"></i>
+                    @caledon3dprintshop
+                </a>
+            </div>
+        </section>
+
+        <!-- Section 3: Order Form (Google Forms Embed) -->
+        <!-- Added animate-fadeIn and data-delay for staggered effect -->
+        <section class="max-w-7xl mx-auto px-6 animate-fadeIn" style="animation-delay: 0.5s;">
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-2xl border-2 border-cyan-500/50">
+                <h2 class="text-4xl font-bold text-center mb-6 text-slate-900">
+                    Start Your Custom Print Order
+                </h2>
+                <p class="text-center text-gray-600 mb-8 max-w-4xl mx-auto">
+                    Use the form below to submit your design (STL, STEP, or link to MakerWorld/Printables), select your material, color, and required specifications.
+                </p>
+
+                <!-- Google Forms Embed Area -->
+                <div class="aspect-video w-full rounded-lg overflow-hidden shadow-xl border border-gray-300" style="height: 800px;">
+                    <iframe 
+                        src="https://docs.google.com/forms/d/e/1FAIpQLSdx_Kfyy0XPYqVTuMSLntcamQDNSMyhujrBqUe_A-Td3RQIlQ/viewform?embedded=true" 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        marginheight="0" 
+                        marginwidth="0"
+                        title="Caledon 3D Print Order Request Form"
+                    >Loading...</iframe>
+                </div>
+
+                <p class="text-center text-sm text-gray-400 mt-4">
+                    Trouble viewing the form? <a href="https://docs.google.com/forms/d/1wIsYN58nP9CxJMDNkLrwGVNn_HNW0IKWrY5_uVHx-Ow/viewform" target="_blank" class="text-cyan-600 hover:underline">Click here to open it in a new window.</a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 mt-16 py-8 text-center rounded-t-xl">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-gray-400 text-sm">
+                &copy; <span id="year"></span> Caledon 3D Printshop. All Rights Reserved.
+            </p>
+            <div class="mt-3">
+                <a href="https://www.instagram.com/caledon3dprintshop" target="_blank" class="text-gray-300 hover:text-cyan-500 mx-2 transition duration-200">
+                    <i class="fab fa-instagram text-2xl"></i>
+                </a>
+            </div>
+        </div>
+        <script>
+            // Set current year in the footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
+    </footer>
+
+</body>
+</html>
